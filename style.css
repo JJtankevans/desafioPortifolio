@@ -1,0 +1,283 @@
+/* ================== GLOBAL  ==================*/
+* {
+    margin: 0;
+    padding: 0;
+
+    line-height: none;
+    text-decoration: none;
+    
+}
+
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #837E9F;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    --bx-shadow: lightblue;
+}
+
+/* ================== BODY TAGS  ==================*/
+
+body {
+    background-color: var(--body-bg-color);
+    display: flex;
+    box-sizing: border-box;
+
+    gap: 1rem;
+
+    height: 100vh;
+    width: 100vw;
+    padding: 1rem;
+}
+
+body aside {
+    flex-basis: 25%;
+}
+
+body main {
+    flex: 1;
+}
+
+section {
+    background-color: var(--bg-cards);
+    color: var(--text-color);
+}
+
+/* ================== PERFIL  ==================*/
+#perfil {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 18.75rem;
+    height: 18.25rem;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 1rem;
+
+    transition: .5s;
+}
+
+#perfilImg {
+    display: flex;
+    box-sizing: border-box;
+
+    background: lightgreen;
+
+    width: 8rem;
+    height: 8rem;
+
+    border-radius: 7rem;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+}
+
+#perfilImg img {
+    width: 7.8rem;
+    height: 7.8rem;
+
+    border-radius: 4rem;
+}
+
+#perfil h3 {
+    font-weight: 700;
+    padding: 0 0 .4rem 0;
+}
+
+#perfil p {
+    font-size: small;
+    font-weight: 400;
+}
+
+/* ================== SOCIAIS  ==================*/
+
+#sociais {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 18.75rem;
+    height: 20.25rem;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+
+    justify-content: center;
+    align-items: left;
+
+    border-radius: 1rem;
+
+    transition: .5s;
+}
+
+.redes {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    margin: .5rem 0;
+
+    transition: .5s;
+}
+
+.redes:hover {
+
+    padding: .4rem;
+
+    border: 1px solid var(--bx-shadow);
+}
+
+.redes p {
+    text-decoration: none;
+
+    color: var(--text-color);
+}
+
+/* ================== TECNOLOGIAS  ==================*/
+
+#tecnologias {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 18.75rem;
+    height: 14.25rem;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+
+    justify-content: flex-start;
+    align-items: left;
+
+    border-radius: 1rem;
+
+    transition: .5s;
+}
+
+#tecnologias h3 {
+    font-weight: 700;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    margin: 0 0 1rem 0;
+}
+
+#techsContainer {
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+
+    column-gap: .8rem;
+
+    color: var(--bg-cards);
+}
+
+#techsContainer p {
+    text-align: center;
+    margin: .3rem 0;
+
+    background-color: var(--bg-techs);
+    padding: .2rem .4rem;
+
+    border-radius: 2rem;
+
+    font-weight: 400;
+
+    font-size: small;
+
+    transition: .2s;
+}
+
+#techsContainer > p:hover {
+    border: 2px solid var(--bx-shadow);
+}   
+
+/* ================== EXPERIENCIAS  ==================*/
+
+#experiencia {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 18.75rem;
+    height: 18.25rem;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+
+    justify-content: flex-start;
+    align-items: left;
+
+    border-radius: 1rem;
+
+    transition: .5s;
+}
+
+#experiencia h3 {
+    font-weight: 700;
+
+    margin: 0 0 1rem 0;
+}
+
+.listContainer {
+    margin: .1rem 2rem 0 2rem;
+}
+
+.listContainer li {
+    padding: .4rem 0;
+}
+
+.listContainer li p:first-child {
+    font-size: medium;
+    font-weight: 700;
+}
+
+.listContainer li p {
+    font-size: small;
+    font-weight: 200;
+}
+
+/* ================== EDUCACAO  ==================*/
+
+#educacao {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    width: 18.75rem;
+    height: 18.25rem;
+
+    padding: 1rem;
+    margin: 1rem 1rem 1.5rem 1rem;
+
+    justify-content: flex-start;
+    align-items: left;
+
+    border-radius: 1rem;
+
+    transition: .5s;
+}
+
+#educacao h3 {
+    font-weight: 700;
+
+    margin: 0 0 1rem 0;
+}
+
+
+#perfil:hover, #sociais:hover, #tecnologias:hover, #experiencia:hover,
+#educacao:hover {
+    box-shadow: 2px 2px var(--bg-techs);
+}
+
