@@ -307,6 +307,7 @@ section {
     border-radius: 1rem;
 
     padding: 0 2rem;
+    margin: 1rem 1rem 2rem 1rem;
 
     box-shadow: 2px 2px black;
 
@@ -341,4 +342,50 @@ section {
     background-color: var(--bx-shadow);
 
     border-radius: .3rem;
+}
+
+/* ================== CARDS  ==================*/
+
+#cardContainer {
+    display: flex;
+    box-sizing: border-box;
+
+    background-color: var(--bg-techs);
+
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 59.5rem;
+}
+
+#cards {
+    display: flex;
+    flex-direction: column;
+
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 28.75rem;
+    height: 11.6rem;
+}
+
+.cardTitle {
+    display: flex;
+
+    padding: 1rem;
+
+    gap: 1rem;
+}
+
+#description {
+    padding: 1rem;
+
+    max-width: 50ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
