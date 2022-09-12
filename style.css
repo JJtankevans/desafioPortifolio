@@ -58,6 +58,8 @@ section {
     align-items: center;
     justify-content: center;
 
+    box-shadow: 2px 2px black;
+
     border-radius: 1rem;
 
     transition: .5s;
@@ -115,6 +117,8 @@ section {
 
     border-radius: 1rem;
 
+    box-shadow: 2px 2px black;
+
     transition: .5s;
 }
 
@@ -160,6 +164,8 @@ section {
     align-items: left;
 
     border-radius: 1rem;
+
+    box-shadow: 2px 2px black;
 
     transition: .5s;
 }
@@ -221,6 +227,8 @@ section {
 
     border-radius: 1rem;
 
+    box-shadow: 2px 2px black;
+
     transition: .5s;
 }
 
@@ -266,6 +274,8 @@ section {
 
     border-radius: 1rem;
 
+    box-shadow: 2px 2px black;
+
     transition: .5s;
 }
 
@@ -281,3 +291,54 @@ section {
     box-shadow: 2px 2px var(--bg-techs);
 }
 
+
+/* ================== HEADER  ==================*/
+
+#projectHeader {
+    display: flex;
+    box-sizing: border-box;
+
+    align-items: center;
+    justify-content: space-between;
+    
+    width: 59.5rem;
+    height: 5.3rem;
+
+    border-radius: 1rem;
+
+    padding: 0 2rem;
+
+    box-shadow: 2px 2px black;
+
+    transition: .5s;
+}
+
+#projectHeader:hover {
+    box-shadow: 2px 2px var(--bg-techs);
+}
+
+#projectHeader h1 {
+    font-size: x-large;
+    font-weight: 700;
+}
+
+#projectHeader button {
+    border: none;
+    background: var(--bg-cards);
+
+    color: var(--text-color);
+
+    font-weight: 400;
+    
+    transition: .3s;
+}
+
+#projectHeader button:hover {
+
+    padding: .5rem;
+
+    color: black;
+    background-color: var(--bx-shadow);
+
+    border-radius: .3rem;
+}
