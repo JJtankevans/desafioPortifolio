@@ -350,7 +350,7 @@ section {
     display: flex;
     box-sizing: border-box;
 
-    background-color: var(--bg-techs);
+    background-color: var(--body-bg-color);
 
     flex-wrap: wrap;
 
@@ -371,6 +371,18 @@ section {
 
     width: 28.75rem;
     height: 11.6rem;
+
+    margin: .4rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 2px 2px black;
+
+    transition: .5s;
+}
+
+#cards:hover {
+    box-shadow: 2px 2px var(--bg-techs);
 }
 
 .cardTitle {
@@ -379,6 +391,13 @@ section {
     padding: 1rem;
 
     gap: 1rem;
+
+    align-items: center;
+}
+
+.cardTitle p {
+    font-size: medium;
+    font-weight: 700;
 }
 
 #description {
@@ -388,4 +407,30 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.cardFooter {
+    display: flex;
+
+    padding: 1rem;
+
+    align-items: center;
+
+}
+
+.cardFooter img, p {
+    padding: 0 .2rem;
+}
+
+#cardBall {
+    width: 1rem;
+    height: 1rem;
+
+    background-color: lightgoldenrodyellow;
+
+    border: 1px solid lightgray;
+
+    border-radius: 1rem;
+
+    margin: 0 .3rem 0 12rem;
 }
