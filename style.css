@@ -464,3 +464,16 @@ section {
 #postsRecents:hover {
     box-shadow: 2px 2px var(--bg-techs);
 }
+
+/* ================== RECENT CARD  ==================*/
+
+#postCard {
+
+}
+
+#postCard img {
+    width: 8rem;
+    height: 8rem;
+
+    border-radius: 4rem;
+}
