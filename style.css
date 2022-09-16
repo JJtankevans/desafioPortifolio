@@ -27,7 +27,7 @@ body {
 
     height: 100vh;
     width: 100vw;
-    padding: 1rem;
+    
 }
 
 body aside {
@@ -35,7 +35,7 @@ body aside {
 }
 
 body main {
-    flex: 1;
+    flex-basis: 1;
 }
 
 section {
@@ -301,13 +301,13 @@ section {
     align-items: center;
     justify-content: space-between;
     
-    width: 59.5rem;
+    width: 59rem;
     height: 5.3rem;
 
     border-radius: 1rem;
 
     padding: 0 2rem;
-    margin: 1rem 1rem 2rem 1rem;
+    margin: .5rem .5rem 2rem .5rem;
 
     box-shadow: 2px 2px black;
 
@@ -357,7 +357,7 @@ section {
     justify-content: space-around;
     align-items: center;
     
-    width: 59.5rem;
+    width: 59rem;
 }
 
 #cards {
@@ -369,7 +369,7 @@ section {
     justify-content: center;
     align-items: flex-start;
 
-    width: 28.75rem;
+    width: 28rem;
     height: 11.6rem;
 
     margin: .4rem;
@@ -440,9 +440,9 @@ section {
 #postsRecents {
     display: flex;
     
-    margin: 1rem;
+    margin: 1rem .5rem;
 
-    width: 59.5rem;
+    width: 59rem;
     height: 5.3rem;
 
     border-radius: 1rem;
@@ -468,7 +468,27 @@ section {
 /* ================== RECENT CARD  ==================*/
 
 #postCard {
+    display: flex;
+    box-sizing: border-box;
 
+    justify-content: flex-start;
+    align-items: center;
+
+    margin: 1rem .5rem;
+    padding: 1rem;
+
+    width: 59rem;
+    height: 12.5rem;
+
+    border-radius: 1rem;
+
+    box-shadow: 2px 2px black;
+
+    transition: .5s;
+}
+
+#postCard:hover {
+    box-shadow: 2px 2px var(--bg-techs);
 }
 
 #postCard img {
@@ -476,4 +496,42 @@ section {
     height: 8rem;
 
     border-radius: 4rem;
+
+    flex-basis: 15%;
+}
+
+#textContainer {
+    display: flex;
+    flex-direction: column;
+    
+    flex-basis: 1;
+
+    margin: 0 2rem;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#postCardHeader {
+    margin-bottom: 1rem;
+}
+
+#postCardBody {
+    display: flex;
+    flex-direction: column;
+}
+
+#postCardBody p {
+    margin-bottom: .2rem;
+}
+
+.tags {
+    display: flex;
+    
+    gap: .2rem 1rem;
+
+    align-items: center;
+    justify-content: flex-start;
+
+    flex-wrap: wrap;
 }
