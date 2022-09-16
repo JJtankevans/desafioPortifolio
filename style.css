@@ -193,6 +193,7 @@ section {
     text-align: center;
     margin: .3rem 0;
 
+    color: #22212C;
     background-color: var(--bg-techs);
     padding: .2rem .4rem;
 
@@ -369,6 +370,8 @@ section {
     justify-content: center;
     align-items: flex-start;
 
+    background-color: var(--bg-cards);
+
     width: 28rem;
     height: 11.6rem;
 
@@ -393,11 +396,14 @@ section {
     gap: 1rem;
 
     align-items: center;
+
+    color: var(--text-color);
 }
 
 .cardTitle p {
     font-size: medium;
     font-weight: 700;
+    color: var(--text-color);
 }
 
 #description {
@@ -407,6 +413,8 @@ section {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+
+    color: var(--text-color);
 }
 
 .cardFooter {
@@ -416,10 +424,14 @@ section {
 
     align-items: center;
 
+    color: var(--text-color);
+
 }
 
 .cardFooter img, p {
-    padding: 0 .2rem;
+    padding: 0 .3rem;
+
+    color: var(--text-color);
 }
 
 #cardBall {
@@ -432,7 +444,7 @@ section {
 
     border-radius: 1rem;
 
-    margin: 0 .3rem 0 12rem;
+    margin: 0 .3rem 0 13rem;
 }
 
 /* ================== RECENT POSTS  ==================*/
